@@ -101,7 +101,7 @@ impl TradeCoordinator {
             return Ok(());
         }
 
-        info!("Processing large {} trade: ${:.2}", trade.coin, notional_usd);
+        info!("processing large {} trade: ${:.2}", trade.coin, notional_usd);
 
         let subscribers = self.database.get_subscribers_for_coin(&trade.coin).await?;
         

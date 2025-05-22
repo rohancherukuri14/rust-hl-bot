@@ -102,7 +102,7 @@ impl TelegramBot {
         );
 
         self.bot.send_message(ChatId(chat_id), message).await?;
-        info!("Sent {} trade notification to chat {}", coin, chat_id);
+        info!("sent {} trade notification to chat {}", coin, chat_id);
         Ok(())
     }
 }

@@ -1,0 +1,6 @@
+services:
+  hl-tg-bot:
+    build: .
+    volumes:
+      - ./config.toml:/app/config.toml
+    restart: unless-stopped
